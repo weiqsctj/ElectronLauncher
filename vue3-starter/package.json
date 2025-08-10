@@ -1,0 +1,27 @@
+{
+  "name": "vue3-project-starter",
+  "version": "1.0.0",
+  "description": "一键启动 Vue3 项目",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --win --x64 --dir"
+  },
+  "build": {
+    "productName": "Vue3 启动器",
+    "win": {
+      "target": "dir",
+      "icon": "assets/vue-icon.png"
+    },
+    "electronDownload": {
+      "mirror": "https://npmmirror.com/mirrors/electron/"
+    }
+  },
+  "keywords": ["electron", "vue", "starter"],
+  "author": "You",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
